@@ -1,6 +1,17 @@
+<div align="center">
+
+<img src="docs/screenshot.jpg" alt="dsh-lark-meeting-notifier 效果图" width="800">
+
 # dsh-lark-meeting-notifier · 飞书会议提醒
 
 > 这个插件只有副作用：在你跟 AI 聊得神魂颠倒的时候，提醒你「不得不去跟碳基生命开会了」。
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DSH Plugin](https://img.shields.io/badge/DSH-Plugin-4D6BFE.svg)](https://github.com/topics/dsh-plugin)
+[![Feishu](https://img.shields.io/badge/Feishu-3370FF.svg)](https://www.feishu.cn/)
+[![Lark](https://img.shields.io/badge/Lark-00B9AE.svg)](https://www.larksuite.com/)
+
+</div>
 
 一个 DeepSeek Harness（DSH）插件：在工作区右侧显示一个可展开/收起的悬浮框，列出**今天剩余的飞书会议**，让你埋头写代码时不会错过会议。
 
@@ -11,10 +22,6 @@
 - 单条「✕」移除提醒（本地持久化，不会动飞书日历里的真实日程）
 - 开始时间已过的会议自动移除；今日会议清空时可查看「明日」会议
 - 配置持久化，设置面板可调
-
-## 效果图
-
-![飞书会议提醒效果图](docs/screenshot.png)
 
 ---
 
