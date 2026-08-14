@@ -1,0 +1,6 @@
+# dsh-lark-meeting-notifier 插件层：把 Host 半部（webServer 路由 + lark-cli 查询）
+# 和 Client 半部（右侧悬浮框）挂进 web profile。
+# 安装：dsh plugin --profile web add github:<user>/dsh-lark-meeting-notifier
+- insert:
+    - id: lark-meeting-notifier
+      name: 'dsh-lark-meeting-notifier'

@@ -1,0 +1,39 @@
+{
+  "name": "dsh-lark-meeting-notifier",
+  "version": "0.1.0",
+  "description": "飞书会议提醒：DeepSeek Harness 右侧悬浮框显示今日/明日飞书会议，多闹钟闪烁提醒，可单条移除。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "feishu",
+    "lark",
+    "calendar",
+    "meeting",
+    "reminder",
+    "plugin"
+  ]
+}
