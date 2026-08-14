@@ -15,7 +15,7 @@
 ## 安装
 
 ```bash
-dsh plugin --profile web add github:<你的账号>/dsh-lark-meeting-notifier
+dsh plugin --profile web add github:yeruizhi/dsh-lark-meeting-notifier
 ```
 
 然后重启 `dsh web`（或 `npx @deepseek-ai/dsh web`）。页面右侧会出现「🕐 会议」小胶囊。
