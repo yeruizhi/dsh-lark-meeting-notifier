@@ -1,7 +1,7 @@
 {
   "name": "dsh-lark-meeting-notifier",
   "version": "0.1.0",
-  "description": "飞书会议提醒：DeepSeek Harness 右侧悬浮框显示今日/明日飞书会议，多闹钟闪烁提醒，可单条移除。",
+  "description": "飞书会议提醒：唯一副作用是在你跟 AI 聊得神魂颠倒时，提醒你「该去跟碳基生命开会了」。右侧悬浮框显示今日/明日飞书会议，多闹钟闪烁提醒。",
   "type": "module",
   "main": "index.js",
   "exports": {
