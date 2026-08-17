@@ -30,7 +30,10 @@ function friendlyError(text) {
 export function apply(ctx) {
   function execLark(args) {
     const spec = ctx.shell.resolve({
-      command: 'LARKSUITE_CLI_NO_UPDATE_NOTIFIER=1 LARKSUITE_CLI_NO_SKILLS_NOTIFIER=1 lark-cli ' + args,
+      // Prepend common Homebrew bin dirs: the desktop app boots with a minimal
+      // PATH (/usr/bin:/bin:/usr/sbin:/sbin), and lark-cli (a node script) needs
+      // both `lark-cli` and `node` discoverable.
+      command: 'PATH="/opt/homebrew/bin:/usr/local/bin:$PATH" LARKSUITE_CLI_NO_UPDATE_NOTIFIER=1 LARKSUITE_CLI_NO_SKILLS_NOTIFIER=1 lark-cli ' + args,
       timeoutMs: 30000,
       stdoutMaxBytes: 2 * 1024 * 1024,
       sandboxPolicy: { mode: 'danger-full-access', workspaceRoot: '/' },
